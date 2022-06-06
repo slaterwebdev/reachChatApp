@@ -1,0 +1,50 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+//LAYOUT LISTS 
+$display: none, inline, block, inline-block, flex;
+$main-axis-layout-list: flex-start, flex-end, center, space-between, space-around;
+$cross-axis-layout-list: center, flex-start, flex-end;
+$text-align: left, center, right;
+
+$flexOrder: 1, 2, 3, 4, 5, 6, 7, 8, 9;
+
+//display
+@each $val in $display {
+    .d-#{$val} {
+        display: $val;
+    }
+}
+
+//justify content
+@each $val in $main-axis-layout-list {
+    .justify-#{$val} {
+        justify-content: $val;
+    }
+}
+
+//align items
+@each $val in $cross-axis-layout-list {
+    .align-#{$val} {
+        align-items: $val;
+    }
+}
+
+//Text-align
+@each $val in $text-align {
+    .text-#{$val} {
+        text-align: $val;
+    }
+}
+
+//Flex Order 
+@each $val in $flexOrder {
+    .flex-order-#{$val} {
+        order: $val;
+    }
+}

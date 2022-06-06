@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap');
+
+//Sass Variables
+@import 'variables';
+
+//Display flex and accompanying styles
+@import 'layout';
+
+//Utilities
+@import 'utilities';
+
+@import 'mediaQueries';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 1px solid red;
+    color: $primary; 
+    font-family: 'Lato', sans-serif;
+}
+
+/*base classes*/
+.m-auto {
+    margin: 0 auto;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.box-shadow-one {
+    box-shadow: 0px 0px 15px 3px #000000;
+}
+
+/*Button component*/
+.button {
+    background-color: $primary;
+    color: white;
+    border: 0;
+}
+
+/*Icons*/
+.dropdown {
+    width: 20px;
+}
+
+/*App*/
+.App {
+    background-image: url('../public/imgs/desktopBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+/*Login page*/
+.login {
+    max-width: 400px;
+    background-color: $white;
+}
+
+.login-image-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('../public/imgs/profileImgs/profile.png');
+    background-size: contain;
+}
+
+.signup-para {
+    text-decoration: underline;
+    color: $primary;
+}
+
+.login-form {
+    max-width: 600px;
+
+    input {
+        width: 200px;
+        max-width: 450px;
+    }
+}
+
+/*signup page*/
+.signup {
+    z-index: 100;
+    background-color: white;
+    max-width: 400px;
+}
+
+.signup-container {
+    width: 100vw;
+}
+
+
+/*Logged in page*/
+.message {
+    width: 300px;
+    max-width: 500px;
+    color: $white;
+    background-color: $messageColor;
+}
