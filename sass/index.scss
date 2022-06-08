@@ -9,8 +9,6 @@
 //Utilities
 @import 'utilities';
 
-@import 'mediaQueries';
-
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +36,7 @@
 }
 
 .box-shadow-one {
-    box-shadow: 0px 0px 15px 3px #000000;
+    box-shadow: 0px 0px 7px 1px #000000;
 }
 
 .pointer {
@@ -52,10 +50,14 @@
 .align-baseline {
     align-items: baseline;
 }
+.overflow-hidden {
+    overflow: hidden;
+}
 
 ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 7px;
+    height: 7px;  
 }
 
 ::-webkit-scrollbar-thumb {
@@ -124,6 +126,12 @@
     max-width: 400px;
 }
 
+/*return to login*/
+#root > div > div.pos-absolute.top-0.left-0.signup-container > div > form > p.text-center.w-100 {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .signup-container {
     width: 100vw;
     height: 100vh;
@@ -150,13 +158,14 @@
 /*Landing Page*/
 .landing-page {
     padding-top: 100px;
+
     .logoutContainer {
         background-color: $messageColor;
-
         h1{
             color: $white;
         }
     }
+
     .message-section,
     .status-section
      {
@@ -164,11 +173,11 @@
         width: 35vw;
         max-width: 500px;
     }
+
     .member-section {
         background-color: $white;
         height: auto;
         div {
-
             .message{
                 width: max-content !important;
             }
@@ -198,13 +207,13 @@
 }
 
 .status {
-    
     background-color: $statusColor;
     div {
         color: $white !important;
-
         span {
             font-style: italic;
         }
     }
 }
+
+@import 'mediaQueries';

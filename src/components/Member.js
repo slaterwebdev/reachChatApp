@@ -1,6 +1,6 @@
 const Member = ({ memberDocs }) => {
     return ( 
-        <div>
+        <div className="message-container overflow-hidden">
             {memberDocs && memberDocs.sort((a, b) => a.username.localeCompare(b.username))
             .map((doc, key) => {
                 return (

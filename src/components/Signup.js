@@ -39,9 +39,7 @@ const Signup = ({ addDoc, colRefThree, setSignup }) => {
 
     return ( 
         <div className="pos-absolute top-0 left-0 signup-container">
-
-            <div onClick={backToLogin} className="ml-4"><span></span><Button login="Return to login"/></div>
-
+            
             {signupOverlay && 
             <div className="signup-overlay-container pos-absolute top-50 left-50 d-flex justify-center align-center">
                 <form onSubmit={sendData} className="text-center signup-overlay br-sm p-4 pos-relative">
@@ -67,6 +65,7 @@ const Signup = ({ addDoc, colRefThree, setSignup }) => {
                     </div>
                     <Button login={'Submit Details'}/>
                     <p className="mt-2 pb-3">Be sure to safely record your login details!</p>
+                    <p onClick={backToLogin} className="text-center w-100">Return to Login</p>
                 </form>
             </div> 
         </div>

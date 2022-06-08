@@ -1,2 +1,64 @@
 //MEDIA QUERIES
 
+@media screen and (max-width: 750px) {
+    .landing-page {
+       flex-direction: column;
+       align-items: center;
+
+       .member-section {
+          width: 500px;
+          overflow: scroll;
+          margin-bottom: 20px;
+          box-shadow: 0px 0px 7px 1px #000000;
+
+          .message-container {
+            display: flex !important;
+            justify-content: space-between;
+            overflow: scroll;
+          }
+       }
+       .status-section,
+       .message-section {
+           width: 95%;
+           margin-bottom: 20px;
+           box-shadow: 0px 0px 7px 1px #000000;
+       }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .App, 
+    .signup-container {
+        background-image: url('../public/imgs/mobileBackground.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .login-container {
+        padding-top: 10px !important;
+
+        #root > div > div > div:nth-child(1) {
+            text-align: center;
+        }
+         
+        .login {
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) !important;
+            width: 350px;
+        }
+    }
+
+    .signup {
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) !important;
+        width: 350px;
+    }
+
+    .signup-container {
+        padding-top: 10px;
+    }
+
+    /*Landing page*/
+    .landing-page .member-section {
+        width: 95%;
+    }
+}

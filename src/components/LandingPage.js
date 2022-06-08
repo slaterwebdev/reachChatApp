@@ -37,12 +37,13 @@ const LandingPage = ({ yourMessage, setYourMessage, yourStatus, setYourStatus, a
                 <h1 className="lobster">Reach</h1>
                 <div onClick={logOut}><Button login="Log Out" /></div>
             </div>
-            <div className="member-section ml-1 mr-1 br-sm">
+            
+            <div className="member-section ml-1 mr-1 br-sm overflow-hidden">
                 <h2 className="text-center m-1">Members</h2>
                 <Member memberDocs={memberDocs} />
             </div>
 
-            <div className="status-section ml-1 mr-1 br-sm">
+            <div className="status-section ml-1 mr-1 br-sm overflow-hidden">
                 <h2 className="text-center m-1">Status Updates</h2>
                 <form onSubmit={handleStatusSubmit} className="d-flex justify-center p-2">
                     <input 
@@ -60,7 +61,7 @@ const LandingPage = ({ yourMessage, setYourMessage, yourStatus, setYourStatus, a
                 </div>
             </div>
 
-            <div className="message-section ml-1 mr-1 br-sm">
+            <div className="message-section ml-1 mr-1 br-sm overflow-hidden">
                 <h2 className="text-center m-1">Group Message</h2>
                 <form onSubmit={handleMessageSubmit} className="d-flex justify-center p-2">
                     <input 
