@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&family=Lobster&display=swap');
 
 //Sass Variables
 @import 'variables';
@@ -14,14 +14,17 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     text-decoration: none;
-    outline: 1px solid red;
     color: $primary; 
     font-family: 'Lato', sans-serif;
 }
 
 /*base classes*/
+.lobster {
+    font-family: 'Lobster', cursive;
+}
+
 .m-auto {
     margin: 0 auto;
 }
@@ -30,8 +33,34 @@
     flex-direction: column;
 }
 
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
 .box-shadow-one {
     box-shadow: 0px 0px 15px 3px #000000;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.text-white {
+    color: $white;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
 }
 
 /*Button component*/
@@ -47,7 +76,8 @@
 }
 
 /*App*/
-.App {
+.App, 
+.signup-container {
     background-image: url('../public/imgs/desktopBackground.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,12 +91,16 @@
     background-color: $white;
 }
 
+.login-container {
+    padding-top: 60px;
+}
+
 .login-image-placeholder {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
     background-image: url('../public/imgs/profileImgs/profile.png');
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .signup-para {
@@ -92,13 +126,85 @@
 
 .signup-container {
     width: 100vw;
+    height: 100vh;
+    background-color: $white;
+    padding-top: 60px;
 }
 
+.no-password-match {
+    color: crimson;
+}
 
-/*Logged in page*/
+.signup-overlay-container {
+    background-color: rgba($color: #000000, $alpha: .7);
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+
+    .signup-overlay {
+        background-color: $white;
+        max-width: 500px;
+    }
+}
+
+/*Landing Page*/
+.landing-page {
+    padding-top: 100px;
+    .logoutContainer {
+        background-color: $messageColor;
+
+        h1{
+            color: $white;
+        }
+    }
+    .message-section,
+    .status-section
+     {
+        background-color: $white;
+        width: 35vw;
+        max-width: 500px;
+    }
+    .member-section {
+        background-color: $white;
+        height: auto;
+        div {
+
+            .message{
+                width: max-content !important;
+            }
+        }
+    }
+}
+
+.message-container {
+    max-height: 60vh;
+    overflow: scroll;
+}
+
 .message {
-    width: 300px;
-    max-width: 500px;
-    color: $white;
     background-color: $messageColor;
+    width: fit-content;
+    div {
+        color: $white !important;
+
+        span {
+            font-style: italic;
+        }
+    }
+}
+
+.grey-message {
+    background-color: grey;
+}
+
+.status {
+    
+    background-color: $statusColor;
+    div {
+        color: $white !important;
+
+        span {
+            font-style: italic;
+        }
+    }
 }

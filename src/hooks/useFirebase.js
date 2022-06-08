@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 
 const useFirebase = () => {
     const [docs, setDocs] = useState([]);
-    const [statusDocs, setStatusDocs] = useState([]);    
+    const [statusDocs, setStatusDocs] = useState([]); 
+    const [memberDocs, setMemberDocs] = useState([]);    
     const firebaseConfig = {
         apiKey: "AIzaSyAhC7-gzUtQc9ysUg4U_uEp9wv0G9kOIw0",
         authDomain: "reachchatapp.firebaseapp.com",
@@ -52,8 +53,21 @@ const useFirebase = () => {
             })
             setStatusDocs(data);
         });
-    }, [colRef, colRefTwo])
-    return {docs, addDoc, colRef, colRefTwo, colRefThree, statusDocs, setStatusDocs, onSnapshot} ;
+
+        onSnapshot(colRefThree, (snapshot) => {
+            const data = snapshot.docs.map((doc) => {
+                return (
+                    {
+                        username: doc.data().username,
+                        password: doc.data().password,
+                    }
+                );
+            })
+            setMemberDocs(data);
+        });
+    }, [])
+
+    return {docs, addDoc, colRef, colRefTwo, colRefThree, statusDocs, setStatusDocs, onSnapshot, memberDocs} ;
 }
 
 export default useFirebase;
