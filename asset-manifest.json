@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reachChatApp/static/css/main.fc59b01e.css",
+    "main.js": "/reachChatApp/static/js/main.d078c842.js",
+    "static/media/desktopBackground.png": "/reachChatApp/static/media/desktopBackground.05ff857c5a394cc7268a.png",
+    "static/media/mobileBackground.jpg": "/reachChatApp/static/media/mobileBackground.3230b900eaa1cb4405fb.jpg",
+    "index.html": "/reachChatApp/index.html",
+    "main.fc59b01e.css.map": "/reachChatApp/static/css/main.fc59b01e.css.map",
+    "main.d078c842.js.map": "/reachChatApp/static/js/main.d078c842.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc59b01e.css",
+    "static/js/main.d078c842.js"
+  ]
+}
