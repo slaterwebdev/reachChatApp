@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/reachChatApp/static/css/main.fc59b01e.css",
-    "main.js": "/reachChatApp/static/js/main.d078c842.js",
-    "static/media/desktopBackground.png": "/reachChatApp/static/media/desktopBackground.05ff857c5a394cc7268a.png",
-    "static/media/mobileBackground.jpg": "/reachChatApp/static/media/mobileBackground.3230b900eaa1cb4405fb.jpg",
-    "index.html": "/reachChatApp/index.html",
-    "main.fc59b01e.css.map": "/reachChatApp/static/css/main.fc59b01e.css.map",
-    "main.d078c842.js.map": "/reachChatApp/static/js/main.d078c842.js.map"
+    "main.css": "/reachchatapp/static/css/main.10d8c062.css",
+    "main.js": "/reachchatapp/static/js/main.d078c842.js",
+    "static/media/desktopBackground.png": "/reachchatapp/static/media/desktopBackground.05ff857c5a394cc7268a.png",
+    "static/media/mobileBackground.jpg": "/reachchatapp/static/media/mobileBackground.3230b900eaa1cb4405fb.jpg",
+    "index.html": "/reachchatapp/index.html",
+    "main.10d8c062.css.map": "/reachchatapp/static/css/main.10d8c062.css.map",
+    "main.d078c842.js.map": "/reachchatapp/static/js/main.d078c842.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc59b01e.css",
+    "static/css/main.10d8c062.css",
     "static/js/main.d078c842.js"
   ]
 }
